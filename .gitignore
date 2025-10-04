@@ -1,0 +1,5 @@
+vendor/
+uploads/
+*.log
+*.tmp
+.env

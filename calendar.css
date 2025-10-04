@@ -1,0 +1,68 @@
+.calendar {
+  margin-top: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.header {
+  text-align: center;
+  padding: 10px;
+  background-color: #e2e8f0;
+  font-weight: bold;
+  font-size: 18px;
+  color: #1e3a8a;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for Sun–Sat */
+  gap: 5px;
+  padding: 10px;
+}
+
+.day_name {
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+  background-color: #f1f5f9;
+  border-radius: 4px;
+}
+
+.day_num {
+  min-height: 80px;
+  padding: 8px;
+  background-color: #f8fafc;
+  border-radius: 6px;
+  position: relative;
+  font-size: 14px;
+}
+
+.day_num.selected {
+  background-color: #dbeafe;
+}
+
+.day_num.ignore {
+  background-color: #f1f5f9;
+  color: #cbd5e1;
+}
+
+.event {
+  margin-top: 5px;
+  font-size: 12px;
+  padding: 3px 5px;
+  border-radius: 4px;
+  background-color: #bbf7d0;
+  color: #065f46;
+}
+
+.event.green {
+  background-color: #bbf7d0;
+  color: #065f46;
+}
+
+.event.red {
+  background-color: #fecaca;
+  color: #991b1b;
+}
