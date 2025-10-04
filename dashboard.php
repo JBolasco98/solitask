@@ -123,35 +123,8 @@ $log_result = $conn->query($log_sql);
     }
     ?>
 
-    <h3>📄 Upload Your Class Schedule (PDF)</h3>
-<form method="POST" enctype="multipart/form-data" action="upload_schedule.php">
-  <input type="file" name="schedule_pdf" accept=".pdf" required><br><br>
-  <button type="submit">Upload PDF</button>
-</form>
-
-
 <div class="calendar-box">
-  <h3>📅 Manage Your Class Schedule</h3>
-
-  <!-- PDF Upload -->
-  <form method="POST" enctype="multipart/form-data" action="upload_schedule.php" style="margin-bottom:10px;">
-    <label>Upload PDF Schedule:</label><br>
-    <input type="file" name="schedule_pdf" accept=".pdf" required>
-    <button type="submit">Upload</button>
-  </form>
-
-  <!-- Manual Input -->
-  <form method="POST" action="manual_schedule.php">
-    <label>Manual Class Entry:</label><br>
-    <input type="text" name="class_name" placeholder="Class Name" required><br>
-    <select name="day_of_week">
-      <option>Monday</option><option>Tuesday</option><option>Wednesday</option>
-      <option>Thursday</option><option>Friday</option><option>Saturday</option><option>Sunday</option>
-    </select><br>
-    <input type="time" name="start_time" required>
-    <input type="time" name="end_time" required>
-    <button type="submit">Add Class</button>
-  </form>
+  <h3>📅 Your Class Schedule</h3>
 
   <!-- Calendar Output -->
   <?php echo $calendar; ?>
